@@ -54,6 +54,12 @@ namespace Calculator.Tests
             double result = Calculate(expression);
             return Math.Round(result,3);
         }
+        [TestCase()]
+        public string DivisionByZeroTest(string expression)
+        {
+            string result = Calculate(expression);
+            return ?;
+        }
         #endregion
 
         #region Subtraction
@@ -65,7 +71,7 @@ namespace Calculator.Tests
         public double SubtractionTest(string expression)
         {
             double result = Calculate(expression);
-            return Math.Round(result, 3);
+            return result;
         }
         #endregion
     }

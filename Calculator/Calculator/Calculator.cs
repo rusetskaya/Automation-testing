@@ -11,6 +11,13 @@ namespace Calculator
         #region Public methods
         static public double Calculate(string input)
         {
+            if (input == string.Empty)
+            {
+                Console.WriteLine("Вы ничего не ввели, повторите ввод");
+                Runner();
+                //throw new ArgumentNullException(nameof(input));
+
+            }
             string output = GetExpression(input);
             double result = Counting(output);
             return result;
@@ -145,6 +152,10 @@ namespace Calculator
 
         #region Runner
         static void Main(string[] args)
+        {
+            Runner();
+        }
+        private static void Runner()
         {
             while (true)
             {
