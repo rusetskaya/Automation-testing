@@ -54,12 +54,7 @@ namespace Calculator.Tests
             double result = Calculate(expression);
             return Math.Round(result,3);
         }
-        [TestCase()]
-        public string DivisionByZeroTest(string expression)
-        {
-            string result = Calculate(expression);
-            return ?;
-        }
+
         #endregion
 
         #region Subtraction
