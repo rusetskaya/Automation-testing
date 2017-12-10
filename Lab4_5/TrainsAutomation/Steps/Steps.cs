@@ -16,7 +16,7 @@ namespace TrainsAutomation.Steps
             Driver.DriverInstance.CloseBrowser();
         }
 
-        public void Search(string repositoryName, string repositoryDescription)
+        public void Search(string from, string to)
         {
             Pages.MainPage mainPage = new Pages.MainPage(driver);
             mainPage.ClickOnCreateNewRepositoryButton();
