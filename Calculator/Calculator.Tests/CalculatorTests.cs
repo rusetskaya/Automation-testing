@@ -51,6 +51,7 @@ namespace Calculator.Tests
         //[TestCase("20/0", ExpectedException = typeof(ArgumentException))]
         public double DivisionTest(string expression)
         {
+
             double result = Calculate(expression);
             return Math.Round(result,3);
         }
