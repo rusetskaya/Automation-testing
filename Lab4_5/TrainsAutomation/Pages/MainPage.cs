@@ -10,6 +10,9 @@ namespace TrainsAutomation.Pages
         [FindsBy(How = How.ClassName, Using = "nsb-page-search-button")]
         private IWebElement buttonSearch;
 
+        [FindsBy(How = How.ClassName, Using = "nsb-profile-link")]
+        private IWebElement buttonRegister;
+
         //[FindsBy(How = How.XPath, Using = "//a[contains(text(), 'New repository')]")]
         //private IWebElement linkNewRepository;
 
@@ -29,6 +32,11 @@ namespace TrainsAutomation.Pages
         public void ClickOnSearchButton()
         {
             buttonSearch.Click();
+        }
+
+        public void ClickOnRegisterButton()
+        {
+            buttonRegister.Click();
         }
     }
 }

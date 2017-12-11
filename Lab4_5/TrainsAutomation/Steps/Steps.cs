@@ -26,5 +26,15 @@ namespace TrainsAutomation.Steps
             //return expectedRepoName.Equals(createNewRepositoryPage.GetCurrentRepositoryName());
         }
 
+        public void Register(string firstname,string lastname,string country,int birthyear,int birthdate,string birthmonth,string email,string password)
+        {
+            Pages.MainPage mainPage = new Pages.MainPage(driver);
+            mainPage.ClickOnRegisterButton();
+            Pages.RegistreringPage registerPage = new Pages.RegistreringPage(driver);
+            registerPage.Register(firstname, lastname, country, birthyear, birthdate, birthmonth, email, password);
+
+            //return expectedRepoName.Equals(createNewRepositoryPage.GetCurrentRepositoryName());
+        }
+
     }
 }

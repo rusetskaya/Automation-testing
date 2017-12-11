@@ -58,10 +58,10 @@ namespace TrainsAutomation.Pages
             Console.WriteLine("Login Page opened");
         }
 
-        public void Register(string firstName, string lastName, string email, string country)
+        public void Register(string firstname, string lastname, string country, int birthyear, int birthdate, string birthmonth, string email, string password)
         {
-            firstnameElement.SendKeys(firstName);
-            lastnameElement.SendKeys(lastName);
+            firstnameElement.SendKeys(firstname);
+            lastnameElement.SendKeys(lastname);
             countryElement.SendKeys(country);
             emailElement.SendKeys(email);
             register.Click();
