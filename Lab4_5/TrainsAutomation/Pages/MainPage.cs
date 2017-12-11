@@ -26,7 +26,7 @@ namespace TrainsAutomation.Pages
             driver.Navigate().GoToUrl(BASE_URL);
         }
 
-        public void ClickOnCreateNewRepositoryButton()
+        public void ClickOnSearchButton()
         {
             buttonSearch.Click();
         }
