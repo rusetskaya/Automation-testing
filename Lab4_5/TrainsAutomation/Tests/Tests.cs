@@ -10,6 +10,7 @@ namespace TrainsAutomation.Tests
         private IWebDriver driver;
         private Steps.Steps steps = new Steps.Steps();
         private const string MAINPAGE_URL = "https://www.nsb.no/en/";
+        private const string REGPAGE_URL = "https://www.nsb.no/en/registrering";
         private const string FROM = "Fauske";
         private const string TO = "Asker";
 
@@ -33,6 +34,16 @@ namespace TrainsAutomation.Tests
 
             Assert.AreEqual(driver.Url, MAINPAGE_URL);
         }
+
+        [Test]
+        public void OpenRegistreringPage()
+        {
+            var registreringPage = new RegistreringPage(driver);
+            registreringPage.OpenPage();
+
+            Assert.AreEqual(driver.Url, REGPAGE_URL);
+        }
+
 
         //[Test]
         //public void OneCanSearch()

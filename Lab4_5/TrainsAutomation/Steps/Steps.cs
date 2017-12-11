@@ -19,7 +19,7 @@ namespace TrainsAutomation.Steps
         public void Search(string from, string to)
         {
             Pages.MainPage mainPage = new Pages.MainPage(driver);
-            mainPage.ClickOnCreateNewRepositoryButton();
+            mainPage.ClickOnSearchButton();
             Pages.SearchPage searchPage = new Pages.SearchPage(driver);
             //string expectedRepoName = createNewRepositoryPage.CreateNewRepository(repositoryName, repositoryDescription);
 
