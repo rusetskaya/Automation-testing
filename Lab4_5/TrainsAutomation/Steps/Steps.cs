@@ -6,9 +6,9 @@ namespace TrainsAutomation.Steps
     {
         IWebDriver driver;
 
-        public void InitBrowser()
+        public IWebDriver InitBrowser()
         {
-            driver = Driver.DriverInstance.GetInstance();
+            return driver = Driver.DriverInstance.GetInstance();
         }
 
         public void CloseBrowser()

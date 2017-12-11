@@ -7,7 +7,7 @@ namespace TrainsAutomation.Pages
     {
         private const string BASE_URL = "https://www.nsb.no/en/";
 
-        [FindsBy(How = How.XPath, Using = "searchJourney")]
+        [FindsBy(How = How.ClassName, Using = "nsb-page-search-button")]
         private IWebElement buttonSearch;
 
         //[FindsBy(How = How.XPath, Using = "//a[contains(text(), 'New repository')]")]
