@@ -21,17 +21,11 @@ namespace TrainsAutomation.Tests
             steps.CloseBrowser();
         }
 
-        //[Test]
-        //public void OneCanLoginGithub()
-        //{
-        //    steps.LoginGithub(USERNAME, PASSWORD);
-        //    Assert.True(steps.IsLoggedIn(USERNAME));
-        //}
-
         [Test]
         public void OneCanSearch()
         {
             steps.Search(FROM, TO);
+            Assert.True(steps.IsGetInfo());
         }
     }
 }
